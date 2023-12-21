@@ -1,2 +1,2 @@
 # Aulas-Python
- Cursos de pyntho que estou a fazendo
+ Cursos de python que estou a fazendo
