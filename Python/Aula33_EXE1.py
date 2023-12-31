@@ -7,11 +7,10 @@ num = input('Digite um número:')
 try:
     inteiro = int(num)
     if "." or inteiro:
-        print('Número inteiro')
+        print(f'Número {inteiro} inteiro')
         if (inteiro % 2 == 0):
             print('O número e par')
         else:
             print('O número e ímpar')
 except:
     print('O número digitado é um float')
-
