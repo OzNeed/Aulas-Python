@@ -25,7 +25,7 @@ while contador <= 100:
     if contador == 40:
         break
 
-print('Seria o oposto que é, invés de omitir vai só informa o que deseja pular')
+print('no de baixo, ele vai entrar em loop infinito e mostrar só o que colocou no if')
 
 #while contador <= 100:
 #    if contador == 6:
@@ -33,7 +33,6 @@ print('Seria o oposto que é, invés de omitir vai só informa o que deseja pula
 #        continue
 #
 #    contador += 1
-#    #Se coloca algum if com o valor que deseja pular #ele vai fazer o oposto
     
     #O termo (continue) serve para pular um determinado valor, como informado acima que foi o 6 e abaixo que foi entre o 10 até o 27.
 #    if contador >= 10 and contador <= 27:
