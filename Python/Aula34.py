@@ -11,4 +11,4 @@ string = 'Bruno Alves'
 #print(string)
 #print(outra_varavel)
 
-print(string.zfill(10))
+print(string.zfill(100))
