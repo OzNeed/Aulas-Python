@@ -1,6 +1,6 @@
 """while/else"""
 
-string = 'Valorqualquer'
+string = 'Valor qualquer'
 
 i = 0
 while i < len(string):
