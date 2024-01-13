@@ -26,4 +26,4 @@ lista_1.append('Bruno')
 indices = range(len(lista_1))
 
 for indice in indices:
-    print(indice, lista[indice], type(lista[indice]))
+    print(indice, lista_1[indice], type(lista[indice]))
