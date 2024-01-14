@@ -12,6 +12,12 @@ lista = []
 while True:
     print('Selecione uma opção abaixo')
     botao = input('[i]nserir [a]pagar [l]istar: ')
+    botao_permitido = 'ial'
+
+    if botao not in botao_permitido:
+        os.system('cls')
+        print('Digite uma das opções informadas!')
+        continue
     
     if botao == 'i':
         inserir = input('Digite o que deseja inserir: ')
