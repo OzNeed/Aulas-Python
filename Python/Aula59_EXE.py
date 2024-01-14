@@ -36,5 +36,5 @@ while True:
                 print('Não há nenhum indice para mostrar!')
                 continue
         for indice, nome in enumerate(lista):
-            os.system('cls')
             print(indice, nome)
+            continue
