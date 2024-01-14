@@ -23,24 +23,29 @@ while True:
         inserir = input('Digite o que deseja inserir: ')
         lista.append(inserir)
         os.system('cls')
-        continue
             
     if botao == 'a':
         apagar = input('Digite o indice que deseja apagar: ')
         if len(apagar) >= 2:
             os.system('cls')
-            continue
-        else:
+        try:
             apagar = int(apagar)
-            lista.pop(apagar)
+            del lista[apagar]
             os.system('cls')
-            continue
-    
+        except ValueError:
+            print('Digite um número inteiro')
+            os.system('cls')
+        except IndexError:
+            print('Digite um índice válido!')
+            os.system('cls')
+        except Exception:
+            print('Erro desconhecido!')
+            os.system('cls')
+    # Except e a melhor forma tratar com o erro que pode dar para retorna a mensagem correspondente ao erro.
     if botao == 'l':
+        os.system('cls')
         if 0 == len(lista):
                 os.system('cls')
                 print('Não há nenhum indice para mostrar!')
-                continue
         for indice, nome in enumerate(lista):
             print(indice, nome)
-            continue
