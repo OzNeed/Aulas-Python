@@ -34,18 +34,17 @@ while True:
    
     add = []
     multiplicando = 10
+    cpf_digitos = digite_cpf[:9]
 
     i = 0    
-    while i <= 9:
-        cpf_digitos = digite_cpf[:9]
-        valor = i
+    while i <= len(digite_cpf):
+        valor = cpf_digitos[i]
+        valor = int(valor)
 
         if multiplicando >= 2:
-            resultado_1 = i * multiplicando
+            add.append(valor * multiplicando)
             i += 1
             multiplicando = multiplicando - 1
-            resultado_1 = resultado_1
-            add.append(resultado_1)
         print(add, end=' '"\n")
 
 
