@@ -1,13 +1,27 @@
 """
-Coleta os 9 digitos do CPF
-multiplar o valor começando por 10
+calculo do primeiro digito do CPF
+CPF: 746.824.890-70
+Colete a soma dos 9 primeiros dígitos do CPF
+multiplicando cada um dos calores por uma
+contagem regressiva começando de 10
 
-após isso somar todos os valores
-multiplicar a soma por 10
-obter o resto da divissão da conta anterior por 11%
+ex.: 746.824.890-70(749824890)
+    10  9  8  7  6  5  4  3  2
+*   7   4  6  8  2  4  8  9  0
+    70  36 48 56 12 20 32 27 0
 
-se o resultado anterior for maior que 9, o resultado e 0
-contrário disso e o resultado do valor
+    Somar todos os resultados:
+    70+36+48+56+12+20+32+27+0 = 301
+    Multiplicar o resaultado anterior por 10
+    301 * 10 = 3010
+    Obter o resto da divisão da conta anterior por 11
+    3010 % 11 = 7
+    Se o resultado anterior for maior que 9:
+        resultado é 0
+    contrário disso:
+        resultado é o valor da conta
+
+O primeiro dígit do CPF é 7
 """
 import os
 
@@ -41,14 +55,8 @@ while True:
         resto = multi % 11
 
         os.system('cls')
-        print('lista dos indices do CPF:', end=' ')
-        print(add)
-        print('\nLista dos indices multiplicados:', end=' ')
-        print(mult)
-        print('\nSoma de todos os valores:', end=' ')
-        print(soma)
-        print('\nO resto, que será o primeiro digito:', end=' ')
-        print(resto)
+        print(f'O valor é: 0' if resto > 9 else 'O digito é: ', resto)
+        continue
 
     else:
         os.system('cls')
