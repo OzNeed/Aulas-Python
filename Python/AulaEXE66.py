@@ -61,6 +61,3 @@ while True:
     else:
         os.system('cls')
         print('Digite um CPF válido, verifique e corriga os dados!')
-        
-
-
