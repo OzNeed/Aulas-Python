@@ -10,3 +10,23 @@ externos.
 A palavra global faz uam variável do escopo externo
 ser a mesm no escopo interno.
 """
+
+x = 1
+
+#Seria a mesma coisa de definir uma váriavel
+def escopo ():
+    # global x é má prática informa isso dentro da váriavel
+    x = 10
+#Váiaveis de escopo interno pode atingir as váriaveis de escopo externo, mas de escopo externo não pode atigir a de interno.
+    def outro_escopo():
+        # global x
+        x = 11
+        y = 2
+        print(x, y)
+    
+    outro_escopo()
+    print(x)
+
+print(x)
+escopo()
+print(x)
