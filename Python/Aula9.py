@@ -16,7 +16,7 @@ print("divisão inteira 10//5", divisão_inteira)
 exponenciação = 2**10
 print("exponenciação de 2**10:", exponenciação)
 
-modulo = 55 % 2 #resto da divisão, para saber se o número e divisivel. Para saber que é tem que dá 0
+modulo = 100 % 2 #resto da divisão, para saber se o número e divisivel. Para saber que é tem que dá 0
 print("modulo de 55%2:", modulo)
 
 print(10%8 == 0) # que aqui vai comparar se o resultado e verdaderio ou não. Pois caso o resultado for zero vai ser true e mais que zero false
