@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Helloworld",
+            "request": "launch",
+            "mainClass": "Helloworld",
+            "projectName": "Aulas-Python_118ac634"
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
